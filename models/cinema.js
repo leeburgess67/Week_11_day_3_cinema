@@ -8,7 +8,7 @@ Cinema.prototype.getTitles = function () {
 
 
 Cinema.prototype.findFilmByTitle = function (searchTitle) {
-  return this.films.filter((film) => {
+  return this.films.find((film) => {
     return film.title == searchTitle;
   });
 }

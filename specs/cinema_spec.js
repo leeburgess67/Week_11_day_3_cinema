@@ -35,7 +35,7 @@ describe('Cinema', function () {
 
   it('should be able to find a film by title', function () {
     const result = cinema.findFilmByTitle('Dunkirk');
-    assert.deepStrictEqual(result, [dunkirk])
+    assert.deepStrictEqual(result, dunkirk)
   });
   it('should be able to filter films by genre', function (){
     const result = cinema.findFilmByGenre('drama');
