@@ -25,6 +25,16 @@ Cinema.prototype.findFilmByYear = function (searchYear) {
   });
 }
 
+Cinema.prototype.checkFilmsOverLength = function (input_length) {
+  return this.films.filter((film) => {
+    return film.length > input_length;
+  });
+}
+
+
+
+
+
 
 
 
