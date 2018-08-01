@@ -13,6 +13,12 @@ Cinema.prototype.findFilmByTitle = function (searchTitle) {
   });
 }
 
+Cinema.prototype.findFilmByGenre = function (searchGenre) {
+  return this.films.filter((film) => {
+    return film.genre == searchGenre;
+  });
+}
+
 
 
 
