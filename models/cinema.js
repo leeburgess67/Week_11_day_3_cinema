@@ -7,6 +7,14 @@ Cinema.prototype.getTitles = function () {
 };
 
 
+Cinema.prototype.findFilmByTitle = function (searchTitle) {
+  return this.films.filter((film) => {
+    return film.title == searchTitle;
+  });
+}
+
+
+
 
 
 
